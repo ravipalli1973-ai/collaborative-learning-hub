@@ -1,6 +1,7 @@
 {
   "name": "learning-hub-client",
-  "version": "0.1.0",
+  "version": "0.1.1",
+  "description": "Frontend client for Collaborative Learning Hub",
   "private": true,
   "dependencies": {
     "react": "^18.2.0",
