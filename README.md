@@ -36,3 +36,16 @@ collaborative-learning-hub/
 │   └── .env.example
 ├── .gitignore
 └── README.md
+
+## Quick Start Guide
+
+### Prerequisites
+- Node.js (v18+)
+- PostgreSQL
+
+### Local Setup
+1. Clone the repository.
+2. Install dependencies:
+   ```bash
+   cd client && npm install
+   cd ../server && npm install
