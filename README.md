@@ -49,3 +49,7 @@ collaborative-learning-hub/
    ```bash
    cd client && npm install
    cd ../server && npm install
+
+3. Set up environment variables by copying .env.example to .env in server directory.
+4. Run database migrations with schema.sql.
+5. Start servers with npm start.
