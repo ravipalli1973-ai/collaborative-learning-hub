@@ -1,0 +1,34 @@
+﻿name: Security Audit
+
+on:
+  schedule:
+    - cron: '0 0 * * 1'
+  push:
+    branches: [ main ]
+
+jobs:
+  audit:
+    name: NPM Audit Scan
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Audit Client Dependencies
+        run: |
+          if [ -d "client" ]; then
+            cd client
+            npm audit --audit-level=moderate || true
+          fi
+
+      - name: Audit Server Dependencies
+        run: |
+          if [ -d "server" ]; then
+            cd server
+            npm audit --audit-level=moderate || true
+          fi
