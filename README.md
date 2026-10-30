@@ -7,7 +7,7 @@ A full-stack collaborative platform built with React, Node.js, Express.js, and P
 - **Review & Feedback Engine:** View code reviews, feedback, and evaluation statuses.
 - **Milestone Progress Tracker:** Visual overview of tasks organized across development sprints and milestones.
 - **Secure REST APIs:** Protected routes with token-based authentication guards and structured error handling.
-- **Relational Data Storage:** PostgreSQL database managing users, assignments, and submissions.
+- **Relational Data Storage:** PostgreSQL database managing users, and submissions.
 
 ## Tech Stack
 - **Frontend:** React.js, Fetch API, HTML5/CSS3
