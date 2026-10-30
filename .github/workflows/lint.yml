@@ -23,7 +23,7 @@ jobs:
         run: |
           if [ -d "client" ]; then
             cd client
-            npm ci
+            npm install
             npm run lint --if-present
           fi
 
@@ -31,6 +31,6 @@ jobs:
         run: |
           if [ -d "server" ]; then
             cd server
-            npm ci
+            npm install
             npm run lint --if-present
           fi
