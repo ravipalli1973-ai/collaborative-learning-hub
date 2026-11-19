@@ -53,3 +53,5 @@ collaborative-learning-hub/
 3. Set up environment variables by copying .env.example to .env in server directory.
 4. Run database migrations with schema.sql.
 5. Start servers with npm start.
+
+- Added study group search and topic filter (Closes #1)
